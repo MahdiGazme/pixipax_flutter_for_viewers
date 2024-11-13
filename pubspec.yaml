@@ -1,0 +1,51 @@
+name: flutter_booof_module
+description: "Flutter app module based on Booof"
+version: 0.0.1
+publish_to: 'none'
+
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ---> State Management <---
+  get: ^4.6.6
+
+  # ---> resources <---
+  milky_http_client:
+    path: packages/milky_http_client
+  sembast: ^3.6.0
+
+  # ---> Fire Base <---
+  firebase_messaging: ^14.7.9
+  firebase_in_app_messaging: ^0.7.4+8
+
+  # ---> map <---
+  mapbox_maps_flutter: ^0.5.1
+  location: ^5.0.3
+
+  # ---> others <---
+  get_storage: ^2.1.1
+  path_provider: ^2.1.2
+  connectivity: ^3.0.6
+  loading_animation_widget: ^1.2.0+4
+  package_info_plus: ^5.0.1
+  signature: ^5.4.1
+  flutter_svg: ^2.0.9
+  milky_avatar_selector:
+    path: packages/milky_avatar_selector
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - lib/assets/images/
